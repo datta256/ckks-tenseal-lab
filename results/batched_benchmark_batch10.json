@@ -1,0 +1,106 @@
+{
+  "tenseal_version": "0.3.16",
+  "python_version": "3.12.10",
+  "poly_modulus_degree": 8192,
+  "coeff_mod_bit_sizes": [
+    60,
+    40,
+    40,
+    60
+  ],
+  "global_scale": 1099511627776,
+  "warmups": 3,
+  "repeats": 20,
+  "batch_size": 10,
+  "timing_unit": "milliseconds per operation, averaged over each batch",
+  "results": [
+    {
+      "vector_length": 8,
+      "expected": 1.32,
+      "actual": 1.319998663473215,
+      "absolute_error": 1.33652678502294e-06,
+      "plaintext": {
+        "median_ms_per_operation": 0.00058,
+        "p95_ms_per_operation": 0.00063,
+        "min_ms_per_operation": 0.00057,
+        "samples": 20,
+        "batch_size": 10
+      },
+      "encrypted_evaluation": {
+        "median_ms_per_operation": 5.6128350000000005,
+        "p95_ms_per_operation": 6.66048,
+        "min_ms_per_operation": 5.17278,
+        "samples": 20,
+        "batch_size": 10
+      },
+      "ciphertext_bytes": 235392,
+      "slowdown_ratio_median": 9677.301724137931
+    },
+    {
+      "vector_length": 32,
+      "expected": 0.02000000000000001,
+      "actual": 0.019999836040563983,
+      "absolute_error": 1.6395943602809382e-07,
+      "plaintext": {
+        "median_ms_per_operation": 0.001935,
+        "p95_ms_per_operation": 0.0020299999999999997,
+        "min_ms_per_operation": 0.0019099999999999998,
+        "samples": 20,
+        "batch_size": 10
+      },
+      "encrypted_evaluation": {
+        "median_ms_per_operation": 7.21647,
+        "p95_ms_per_operation": 8.62612,
+        "min_ms_per_operation": 6.81638,
+        "samples": 20,
+        "batch_size": 10
+      },
+      "ciphertext_bytes": 235369,
+      "slowdown_ratio_median": 3729.4418604651164
+    },
+    {
+      "vector_length": 128,
+      "expected": 0.6900000000000001,
+      "actual": 0.69000064358189,
+      "absolute_error": 6.435818898919976e-07,
+      "plaintext": {
+        "median_ms_per_operation": 0.00486,
+        "p95_ms_per_operation": 0.0049,
+        "min_ms_per_operation": 0.00481,
+        "samples": 20,
+        "batch_size": 10
+      },
+      "encrypted_evaluation": {
+        "median_ms_per_operation": 9.771560000000001,
+        "p95_ms_per_operation": 29.283890000000003,
+        "min_ms_per_operation": 8.76049,
+        "samples": 20,
+        "batch_size": 10
+      },
+      "ciphertext_bytes": 235364,
+      "slowdown_ratio_median": 2010.6090534979428
+    },
+    {
+      "vector_length": 512,
+      "expected": 0.97,
+      "actual": 0.9700008292333739,
+      "absolute_error": 8.292333739667868e-07,
+      "plaintext": {
+        "median_ms_per_operation": 0.051415,
+        "p95_ms_per_operation": 0.05758,
+        "min_ms_per_operation": 0.03378,
+        "samples": 20,
+        "batch_size": 10
+      },
+      "encrypted_evaluation": {
+        "median_ms_per_operation": 32.309545,
+        "p95_ms_per_operation": 43.916430000000005,
+        "min_ms_per_operation": 26.95867,
+        "samples": 20,
+        "batch_size": 10
+      },
+      "ciphertext_bytes": 235300,
+      "slowdown_ratio_median": 628.4069823981328
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+config,poly_modulus_degree,coeff_mod_bit_sizes,depth,status,expected,actual,absolute_error,operation_ms,ciphertext_bytes,note
+baseline_8192,8192,"[60, 40, 40, 60]",0,ok,1.01,1.0100000004309349,4.309348433650939e-10,0.0,334376,Initial encrypted value; depth 0
+baseline_8192,8192,"[60, 40, 40, 60]",1,ok,1.0201,1.0201001370568425,1.3705684254183836e-07,3.29579999379348,235363,One sequential encrypted squaring at this depth
+baseline_8192,8192,"[60, 40, 40, 60]",2,ok,1.04060401,1.0406049898837888,9.798837887764478e-07,1.870700012659654,131216,One sequential encrypted squaring at this depth
+baseline_8192,8192,"[60, 40, 40, 60]",3,failed,,,,0.2548999909777194,,ValueError: scale out of bounds
+extended_16384,16384,"[60, 40, 40, 40, 40, 60]",0,ok,1.01,1.009999999827334,1.7266610363719792e-10,0.0,1053309,Initial encrypted value; depth 0
+extended_16384,16384,"[60, 40, 40, 40, 40, 60]",1,ok,1.0201,1.0201014578306535,1.4578306535284469e-06,13.283499996759929,855902,One sequential encrypted squaring at this depth
+extended_16384,16384,"[60, 40, 40, 40, 40, 60]",2,ok,1.04060401,1.0406103018538388,6.291853838824579e-06,8.973900010460056,657902,One sequential encrypted squaring at this depth
+extended_16384,16384,"[60, 40, 40, 40, 40, 60]",3,ok,1.0828567056280802,1.0828736750731909,1.696944511064835e-05,6.606199996895157,458969,One sequential encrypted squaring at this depth
+extended_16384,16384,"[60, 40, 40, 40, 40, 60]",4,ok,1.1725786449236988,1.1726208481819984,4.220325829962235e-05,4.1071999876294285,262291,One sequential encrypted squaring at this depth
+extended_16384,16384,"[60, 40, 40, 40, 40, 60]",5,failed,,,,0.24559999292250723,,ValueError: scale out of bounds
